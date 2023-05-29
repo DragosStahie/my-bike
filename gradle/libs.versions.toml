@@ -1,0 +1,46 @@
+[versions]
+agp = "8.2.0-alpha01"
+kotlin = "1.8.0"
+core-ktx = "1.9.0"
+junit = "4.13.2"
+androidx-test-ext-junit = "1.1.5"
+espresso-core = "3.5.1"
+appcompat = "1.6.1"
+material = "1.9.0"
+org-jetbrains-kotlin-jvm = "1.8.0"
+navigation = "2.6.0-rc01"
+nav_safe_args = "2.5.1"
+constraintlayout = "2.1.4"
+koin = "3.4.0"
+room = "2.5.1"
+ksp = "1.8.10-1.0.9"
+dataStore = "1.1.0-alpha04"
+lifecycle = "2.6.1"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+navigationFragment = { module = "androidx.navigation:navigation-fragment", version.ref = "navigation" }
+navigationKtx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigation" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+room = { module = "androidx.room:room-runtime", version.ref = "room"}
+roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room"}
+dataStore = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStore" }
+lifecycleViewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycleKtx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle"}
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "org-jetbrains-kotlin-jvm" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+navigationSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "nav_safe_args" }
+ksp = {id = "com.google.devtools.ksp", version.ref = "ksp"}
+
+[bundles]
+

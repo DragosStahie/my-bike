@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/startup_flow">
+
+
+    <include app:graph="@navigation/startup_flow" />
+
+    <include app:graph="@navigation/bikes_flow" />
+
+    <include app:graph="@navigation/rides_flow" />
+
+    <action
+        android:id="@+id/action_startup_flow"
+        app:destination="@id/startup_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/app_nav_graph" />
+
+    <action
+        android:id="@+id/action_bikes_flow"
+        app:destination="@id/bikes_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/app_nav_graph"/>
+
+    <action
+        android:id="@+id/action_rides_flow"
+        app:destination="@id/rides_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/app_nav_graph"/>
+</navigation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="startup_flow" type="id" />
+    <item name="bikes_flow" type="id" />
+    <item name="rides_flow" type="id" />
+</resources>
