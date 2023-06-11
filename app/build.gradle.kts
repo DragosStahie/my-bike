@@ -60,5 +60,6 @@ dependencies {
     implementation(project(":feature:startup"))
     implementation(project(":feature:bikes"))
     implementation(project(":feature:rides"))
+    implementation(project(":feature:settings"))
     implementation(project(":navigation"))
 }

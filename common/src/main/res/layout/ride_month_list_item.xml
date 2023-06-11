@@ -1,0 +1,12 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ride_month"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginTop="4dp"
+    android:background="@null"
+    android:text="@string/rides"
+    android:textAllCaps="true"
+    android:textColor="@color/app_light_blue"
+    android:textFontWeight="@integer/text_bold_weight"
+    android:textSize="@dimen/nav_link_text_size" />

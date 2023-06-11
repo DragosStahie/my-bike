@@ -1,4 +1,18 @@
 <resources>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_bikes_description">You don\'t have any bikes added yet.\nAdd your first bike and start registering your rides in order to keep your bike\'s service cycles up to date.</string>
+    <string name="mountain_bike">Mountain Bike</string>
+    <string name="road_bike">Road Bike</string>
+    <string name="electric_bike">Electric Bike</string>
+    <string name="hybrid_bike">Hybrid Bike</string>
+    <string name="bike_name">Bike Name</string>
+    <string name="wheel_size">Wheel Size</string>
+    <string name="service_in">Service In</string>
+    <string name="default_bike">Default Bike</string>
+    <string name="bike_name_not_unique">There already is a bike with this name</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string-array name="wheel_sizes_array">
+        <item>27.5\"</item>
+        <item>29\"</item>
+    </string-array>
 </resources>

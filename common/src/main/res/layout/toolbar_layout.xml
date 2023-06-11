@@ -7,40 +7,112 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/service_notification_view"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/design_default_color_on_primary"
-        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+        android:layout_height="60dp"
+        android:background="@color/app_notification_bar"
+        android:gravity="bottom"
+        android:paddingBottom="6dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/app_black"
+        android:textFontWeight="@integer/text_bold_weight"
+        android:textSize="@dimen/nav_link_text_size"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nukeproof Scout 290 service in 100km" />
+
+    <ImageButton
+        android:id="@+id/close_notification_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:src="@drawable/icon_x"
+        android:tint="@color/app_black"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/service_notification_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseAppTint" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="@color/cardview_dark_background"
+        android:layout_height="wrap_content"
+        android:background="@color/app_black"
         android:elevation="4dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/service_notification_view">
 
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginStart="12dp"
+            android:layout_margin="12dp"
             android:background="@null"
-            android:src="@drawable/ic_home"
-            android:visibility="invisible" />
+            android:src="@drawable/ic_back"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/more_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_more_selector"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="12dp"
+            android:background="@null"
+            android:src="@drawable/icon_x"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/top_bar_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="start"
+            android:layout_margin="12dp"
             android:ellipsize="marquee"
             android:maxLines="1"
-            android:textColor="@color/design_default_color_on_primary"
-            android:textFontWeight="600"
-            android:textSize="17sp"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/title_text_size"
             tools:text="Test title" />
+
+        <TextView
+            android:id="@+id/add_ride_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="12dp"
+            android:drawableStart="@drawable/icon_add"
+            android:gravity="center_vertical"
+            android:text="@string/add_ride"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/add_bike_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="12dp"
+            android:drawableStart="@drawable/icon_add"
+            android:gravity="center_vertical"
+            android:text="@string/add_bike"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/button_text_size"
+            android:visibility="gone" />
 
     </androidx.appcompat.widget.Toolbar>
 

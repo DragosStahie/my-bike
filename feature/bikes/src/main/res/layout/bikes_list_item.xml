@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    android:background="@color/app_dark_blue"
+    app:cardCornerRadius="4dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_bike_card"/>
+
+    <include
+        android:id="@+id/bike_layout"
+        layout="@layout/bike_layout" />
+
+    <TextView
+        android:id="@+id/bike_options_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_gravity="end"
+        android:background="@drawable/ic_more_selector"/>
+
+    <include
+        android:id="@+id/bike_options_menu"
+        layout="@layout/more_options_menu_layout"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bike_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Nukeproof Scout 290" />
+
+        <TextView
+            android:id="@+id/wheel_size_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Wheels: 29&quot;" />
+
+        <TextView
+            android:id="@+id/service_interval_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Service in 170km" />
+
+        <SeekBar
+            android:id="@+id/service_interval_progress_bar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/service_progress_bar"
+            android:splitTrack="false"
+            android:thumb="@drawable/loading_wrench" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

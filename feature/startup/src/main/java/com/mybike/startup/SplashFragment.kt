@@ -17,10 +17,10 @@ class SplashFragment : BaseFragment<FragmentSplashBinding>(FragmentSplashBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        testNav()
+        navigateToHome()
     }
 
-    private fun testNav() {
+    private fun navigateToHome() {
         Handler(Looper.getMainLooper()).postDelayed(
             { navigator.navigateToFlow(NavigationFlow.BikesFlow) },
             2000

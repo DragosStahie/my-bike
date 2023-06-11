@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_white">#FFFFFF</color>
+    <color name="app_light_gray">#BCBCBC</color>
+    <color name="app_black">#000000</color>
+    <color name="app_blue">#0066F5</color>
+    <color name="app_blue_transparent">#C90066F5</color>
+    <color name="app_dark_blue">#222C48</color>
+    <color name="app_darker_blue">#121726</color>
+    <color name="app_light_blue">#5A6C9E</color>
+    <color name="app_gray">#7F7F80</color>
+    <color name="app_dark_gray">#121726</color>
+    <color name="app_error">#D5040F</color>
+    <color name="app_notification_bar">#FFD400</color>
+
+    <color name="bike_white">#FFFFFF</color>
+    <color name="bike_green">#628A3E</color>
+    <color name="bike_red">#FA4D56</color>
+    <color name="bike_yellow">#D9E021</color>
+    <color name="bike_blue">#4895F6</color>
+    <color name="bike_orange">#E8A701</color>
+    <color name="bike_cyan">#76EFF0</color>
+    <color name="bike_beige">#BEA089</color>
+    <color name="bike_purple">#F4BBFB</color>
+    <color name="bike_dark_blue">#619EB3</color>
+    <color name="bike_brown">#664C40</color>
+
+    <color name="bike_white_transparent">#80FFFFFF</color>
+    <color name="bike_green_transparent">#80628A3E</color>
+    <color name="bike_red_transparent">#80FA4D56</color>
+    <color name="bike_yellow_transparent">#80D9E021</color>
+    <color name="bike_blue_transparent">#804895F6</color>
+    <color name="bike_orange_transparent">#80E8A701</color>
+    <color name="bike_cyan_transparent">#8076EFF0</color>
+    <color name="bike_beige_transparent">#80BEA089</color>
+    <color name="bike_purple_transparent">#80F4BBFB</color>
+    <color name="bike_dark_blue_transparent">#80619EB3</color>
+    <color name="bike_brown_transparent">#80664C40</color>
+
+</resources>

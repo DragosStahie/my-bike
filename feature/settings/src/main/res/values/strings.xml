@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="distance_units">Distance Units</string>
+    <string name="service_reminder">Service Reminder</string>
+    <string name="default_bike">Default Bike</string>
+    <string name="empty_service_interval_error">Service reminder value cannot be empty when reminders are turned on</string>
+    <string-array name="units_array">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+</resources>

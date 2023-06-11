@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">My Bike</string>
+    <string name="service_notification_template">%1$s service in %2$d%3$s</string>
+    <string name="service_notification_confirmation_message">Clicking ok will reset the service notification. If you have not yet performed the service or you do not wish to dismiss the notification click on cancel.</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>

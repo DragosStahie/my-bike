@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/edit_ride_flow"
+    app:startDestination="@id/edit_ride_fragment">
+
+    <fragment
+        android:id="@+id/edit_ride_fragment"
+        android:name="com.mybike.rides.fragment.EditRideFragment">
+        <argument
+            android:name="rideId"
+            app:argType="integer"/>
+    </fragment>
+
+</navigation>

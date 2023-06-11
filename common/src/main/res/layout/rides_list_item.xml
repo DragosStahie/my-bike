@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_darker_blue"/>
+
+    <include
+        android:id="@+id/ride_options_menu"
+        layout="@layout/more_options_menu_layout"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ride_options_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="12dp"
+        android:layout_gravity="end"
+        android:elevation="10dp"
+        android:background="@drawable/ic_more_selector"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ride_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:drawableStart="@drawable/rides_inactive"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Friday 29 Ride" />
+
+        <TextView
+            android:id="@+id/bike_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/nav_link_text_size"
+            tools:text="Bike: Nukeproof Scout 290" />
+
+        <TextView
+            android:id="@+id/distance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/nav_link_text_size"
+            tools:text="Distance: 60km" />
+
+        <TextView
+            android:id="@+id/duration_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/nav_link_text_size"
+            tools:text="Duration: 2h, 14min" />
+
+        <TextView
+            android:id="@+id/date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/nav_link_text_size"
+            tools:text="Date: 29.03.2023" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

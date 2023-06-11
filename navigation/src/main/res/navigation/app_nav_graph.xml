@@ -11,6 +11,10 @@
 
     <include app:graph="@navigation/rides_flow" />
 
+    <include app:graph="@navigation/edit_ride_flow" />
+
+    <include app:graph="@navigation/settings_flow" />
+
     <action
         android:id="@+id/action_startup_flow"
         app:destination="@id/startup_flow"
@@ -28,6 +32,23 @@
     <action
         android:id="@+id/action_rides_flow"
         app:destination="@id/rides_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popUpTo="@id/app_nav_graph"/>
+
+    <action
+        android:id="@+id/action_edit_ride_flow"
+        app:destination="@id/edit_ride_flow"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim">
+        <argument
+            android:name="rideId"
+            app:argType="integer"/>
+    </action>
+
+    <action
+        android:id="@+id/action_settings_flow"
+        app:destination="@id/settings_flow"
         app:enterAnim="@anim/nav_default_enter_anim"
         app:exitAnim="@anim/nav_default_exit_anim"
         app:popUpTo="@id/app_nav_graph"/>

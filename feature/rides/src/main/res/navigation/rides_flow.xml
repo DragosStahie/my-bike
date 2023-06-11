@@ -6,7 +6,26 @@
 
     <fragment
         android:id="@+id/rides_fragment"
-        android:name="com.mybike.rides.RidesFragment">
+        android:name="com.mybike.rides.fragment.RidesFragment">
+        <action
+            android:id="@+id/action_rides_fragment_to_add_ride_fragment"
+            app:destination="@id/add_ride_fragment" />
+        <action
+            android:id="@+id/action_rides_fragment_to_edit_ride_fragment"
+            app:destination="@id/edit_ride_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_ride_fragment"
+        android:name="com.mybike.rides.fragment.AddRideFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_ride_fragment"
+        android:name="com.mybike.rides.fragment.EditRideFragment">
+        <argument
+            android:name="rideId"
+            app:argType="integer" />
     </fragment>
 
 </navigation>

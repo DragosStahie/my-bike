@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/waves_small"
+    android:paddingBottom="12dp"
+    tools:background="@color/app_black">
+
+    <include
+        android:id="@+id/bike_layout"
+        layout="@layout/bike_layout"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bike_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="12dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/wheel_size_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Wheels: 29&quot;" />
+
+        <TextView
+            android:id="@+id/service_interval_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Service in 170km" />
+
+        <SeekBar
+            android:id="@+id/service_interval_progress_bar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxHeight="5dp"
+            android:minHeight="5dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/service_progress_bar"
+            android:splitTrack="false"
+            android:thumb="@drawable/loading_wrench" />
+
+        <TextView
+            android:id="@+id/ride_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Rides 3" />
+
+        <TextView
+            android:id="@+id/total_distance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_white"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/title_text_size"
+            tools:text="Total Rides Distance" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
