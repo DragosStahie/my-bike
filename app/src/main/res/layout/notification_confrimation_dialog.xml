@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:layout_marginHorizontal="12dp"
+    android:background="@color/app_darker_blue"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/confirmation_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/service_notification_confirmation_message"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:gravity="center"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/ok_button_frame"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmation_message"
+        app:layout_constraintEnd_toStartOf="@id/cancel_button_frame">
+
+        <ImageButton
+            android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/app_light_gray"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/button_text_size" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cancel_button_frame"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_margin="12dp"
+        app:layout_constraintStart_toEndOf="@id/ok_button_frame"
+        app:layout_constraintTop_toBottomOf="@id/confirmation_message"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageButton
+            android:id="@+id/cancel_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rounded_button" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/app_light_gray"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/button_text_size" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

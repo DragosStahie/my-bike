@@ -1,4 +1,28 @@
 <resources>
     <string name="bikes">Bikes</string>
     <string name="rides">Rides</string>
+    <string name="settings">Settings</string>
+    <string name="add_ride">Add Ride</string>
+    <string name="add_bike">Add Bike</string>
+    <string name="save">Save</string>
+    <string name="required_field">Required field</string>
+    <string name="kilometers">KM</string>
+    <string name="miles">MI</string>
+    <string name="all_rides_statistics">All Rides Statistics</string>
+    <string name="road">Road</string>
+    <string name="mtb">MTB</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="e_bike">E-Bike</string>
+    <string name="bike_name_template">Bike: %1$s</string>
+    <string name="wheels_template">Wheels: %1$s</string>
+    <string name="distance_template">Distance: %1$d%2$s</string>
+    <string name="duration_template">Duration: %1$dh %2$dmin</string>
+    <string name="date_template">Date: %1$s</string>
+    <string name="total_distance_template">Total: %1$d %2$s</string>
+    <string name="service_in_template">Service in %1$d%2$s</string>
+    <string name="ride_number">Rides %1$d</string>
+    <string name="total_rides_distance">Total Rides Distance %1$d%2$s</string>
+    <string name="delete_message">Do you wish to perform delete operation?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
 </resources>

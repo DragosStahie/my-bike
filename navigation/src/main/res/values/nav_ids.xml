@@ -3,4 +3,6 @@
     <item name="startup_flow" type="id" />
     <item name="bikes_flow" type="id" />
     <item name="rides_flow" type="id" />
+    <item name="edit_ride_flow" type="id" />
+    <item name="settings_flow" type="id" />
 </resources>

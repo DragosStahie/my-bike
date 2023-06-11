@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_waves"
+    tools:background="@color/app_black"
+    tools:context=".fragment.AddEditRideBaseFragment">
+
+    <ProgressBar
+        android:id="@+id/loading_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="12dp"
+        android:visibility="gone"
+        android:indeterminateTint="@color/app_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_darker_blue" />
+
+    <TextView
+        android:id="@+id/ride_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:drawableEnd="@drawable/icon_required"
+        android:text="@string/ride_title"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ride_title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_input_bg"
+        android:inputType="textCapWords"
+        android:paddingStart="12dp"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintTop_toBottomOf="@id/ride_title_label" />
+
+    <TextView
+        android:id="@+id/ride_title_required_field_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/required_field"
+        android:textColor="@color/app_error"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ride_title_edit_text" />
+
+    <TextView
+        android:id="@+id/bike_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:drawableEnd="@drawable/icon_required"
+        android:text="@string/bike"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ride_title_required_field_error" />
+
+    <Spinner
+        android:id="@+id/bike_name_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@null"
+        app:layout_constraintTop_toBottomOf="@id/bike_name_label" />
+
+    <TextView
+        android:id="@+id/bike_name_required_field_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/no_bike_selected_error"
+        android:textColor="@color/app_error"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bike_name_spinner" />
+
+    <TextView
+        android:id="@+id/distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:drawableEnd="@drawable/icon_required"
+        android:text="@string/distance"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bike_name_required_field_error" />
+
+    <EditText
+        android:id="@+id/distance_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_input_bg"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintTop_toBottomOf="@id/distance_label" />
+
+    <TextView
+        android:id="@+id/distance_unit_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_light_gray"
+        android:text="@string/kilometers"
+        android:layout_marginEnd="12dp"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintTop_toTopOf="@id/distance_edit_text"
+        app:layout_constraintBottom_toBottomOf="@id/distance_edit_text"
+        app:layout_constraintEnd_toEndOf="@id/distance_edit_text"/>
+
+    <TextView
+        android:id="@+id/distance_required_field_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/required_field"
+        android:textColor="@color/app_error"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distance_edit_text" />
+
+    <TextView
+        android:id="@+id/duration_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:drawableEnd="@drawable/icon_required"
+        android:text="@string/duration"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/distance_required_field_error" />
+
+    <TextView
+        android:id="@+id/duration_input_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_input_bg"
+        android:inputType="none"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintTop_toBottomOf="@id/duration_label" />
+
+    <TextView
+        android:id="@+id/duration_required_field_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/required_field"
+        android:textColor="@color/app_error"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_input_text_view" />
+
+    <TextView
+        android:id="@+id/date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:drawableEnd="@drawable/icon_required"
+        android:text="@string/date"
+        android:textColor="@color/app_light_gray"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/duration_required_field_error" />
+
+    <TextView
+        android:id="@+id/date_input_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_input_bg"
+        android:gravity="center_vertical"
+        android:inputType="none"
+        android:paddingStart="12dp"
+        android:textColor="@color/app_white"
+        android:textSize="@dimen/input_text_size"
+        app:layout_constraintTop_toBottomOf="@id/date_label" />
+
+    <TextView
+        android:id="@+id/date_required_field_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/required_field"
+        android:textColor="@color/app_error"
+        android:textFontWeight="@integer/text_normal_weight"
+        android:textSize="@dimen/tab_bar_text_size"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_input_text_view" />
+
+    <FrameLayout
+        android:id="@+id/add_edit_ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/add_edit_ride_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_add_edit_button" />
+
+        <TextView
+            android:id="@+id/add_edit_ride_button_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/add_ride"
+            android:textColor="@color/app_light_gray"
+            android:textFontWeight="@integer/text_normal_weight"
+            android:textSize="@dimen/button_text_size" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,13 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/bottom_nav_bikes"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/icon_bikes_inactive"
         android:orderInCategory="1"
         android:title="@string/bikes" />
 
     <item
         android:id="@+id/bottom_nav_rides"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/rides_inactive"
         android:orderInCategory="2"
         android:title="@string/rides" />
+
+    <item
+        android:id="@+id/bottom_nav_settings"
+        android:icon="@drawable/settings_inactive"
+        android:orderInCategory="3"
+        android:title="@string/settings" />
 </menu>

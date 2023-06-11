@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="340dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="4dp"
+    app:cardCornerRadius="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_darker_blue" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:drawableStart="@drawable/icon_stats"
+        android:gravity="center"
+        android:text="@string/all_rides_statistics"
+        android:textColor="@color/app_white"
+        android:textFontWeight="@integer/text_semi_bold_weight"
+        android:textSize="@dimen/title_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="50dp"
+        android:elevation="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/app_light_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="26dp"
+            android:background="@color/app_light_blue" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="50dp"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_blue"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_light_blue"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="270dp"
+        android:elevation="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/mtb"
+            android:textColor="@color/app_gray"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/road"
+            android:textColor="@color/app_gray"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/e_bike"
+            android:textColor="@color/app_gray"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hybrid"
+            android:textColor="@color/app_gray"
+            android:textFontWeight="@integer/text_semi_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="242dp"
+        android:elevation="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mtb_distance_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_darker_blue"
+            android:textFontWeight="@integer/text_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:id="@+id/road_distance_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_darker_blue"
+            android:textFontWeight="@integer/text_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:id="@+id/electric_distance_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_darker_blue"
+            android:textFontWeight="@integer/text_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+        <TextView
+            android:id="@+id/hybrid_distance_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/app_darker_blue"
+            android:textFontWeight="@integer/text_bold_weight"
+            android:textSize="@dimen/input_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="78dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="50dp"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp">
+
+        <ImageView
+            android:id="@+id/mtb_graph_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ride_statistics_graph_bar" />
+
+        <ImageView
+            android:id="@+id/road_graph_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ride_statistics_graph_bar" />
+
+        <ImageView
+            android:id="@+id/electric_graph_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ride_statistics_graph_bar" />
+
+        <ImageView
+            android:id="@+id/hybrid_graph_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_weight="1"
+            android:src="@drawable/ride_statistics_graph_bar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="306dp"
+        android:gravity="center"
+        tools:text="Total: 25.570 KM"
+        android:textColor="@color/app_white"
+        android:textFontWeight="@integer/text_semi_bold_weight"
+        android:textSize="@dimen/nav_link_text_size" />
+
+</androidx.cardview.widget.CardView>

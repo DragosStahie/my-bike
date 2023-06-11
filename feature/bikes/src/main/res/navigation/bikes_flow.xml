@@ -6,7 +6,40 @@
 
     <fragment
         android:id="@+id/bikes_fragment"
-        android:name="com.mybike.bikes.BikesFragment">
+        android:name="com.mybike.bikes.fragment.BikesFragment">
+        <action
+            android:id="@+id/action_bikes_fragment_to_add_bike_fragment"
+            app:destination="@id/add_bike_fragment" />
+        <action
+            android:id="@+id/action_bikes_fragment_to_edit_bike_fragment"
+            app:destination="@id/edit_bike_fragment" />
+        <action
+            android:id="@+id/action_bikes_fragment_to_bike_details_fragment"
+            app:destination="@id/bike_details_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_bike_fragment"
+        android:name="com.mybike.bikes.fragment.AddBikeFragment">
+    </fragment>
+
+    <fragment
+        android:id="@+id/edit_bike_fragment"
+        android:name="com.mybike.bikes.fragment.EditBikesFragment">
+        <argument
+            android:name="bike"
+            app:argType="com.mybike.data.model.Bike" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bike_details_fragment"
+        android:name="com.mybike.bikes.fragment.BikeDetailsFragment">
+        <argument
+            android:name="bike"
+            app:argType="com.mybike.data.model.Bike" />
+        <action
+            android:id="@+id/action_bike_details_fragment_to_edit_bike_fragment"
+            app:destination="@id/edit_bike_fragment" />
     </fragment>
 
 </navigation>

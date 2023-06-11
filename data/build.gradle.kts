@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.koin)
     implementation(libs.dataStore)
     api(libs.room)
+    api(libs.roomKtx)
     ksp(libs.roomCompiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)

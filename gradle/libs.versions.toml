@@ -29,6 +29,7 @@ navigationKtx = { module = "androidx.navigation:navigation-ui-ktx", version.ref 
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 koin = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 room = { module = "androidx.room:room-runtime", version.ref = "room"}
+roomKtx = { module = "androidx.room:room-ktx", version.ref = "room"}
 roomCompiler = { module = "androidx.room:room-compiler", version.ref = "room"}
 dataStore = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStore" }
 lifecycleViewModel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
